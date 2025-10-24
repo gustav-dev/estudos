@@ -1,23 +1,5 @@
-# Exercício Python 36:
-# Escreva um programa para aprovar o empréstimo bancário para
-# a compra de uma casa. Pergunte o valor da casa, o salário do comprador e em quantos
-# anos ele vai pagar. A prestação mensal não pode exceder 30% do salário ou então o
-# empréstimo será negado.
-from django.template.backends.django import reraise
-from sympy import elliptic_f
-
-# import math
-# num = int(input('Digite um numero: '))
-# raiz = math.sqrt(num)
-# print('A raiz quadrada de {} é {:.0f}.'.format(num, raiz))
-#
-#
-# from math import sqrt, floor
-# n = int(input('Digite um número: '))
-# r = sqrt(n)
-# print('Qual a raiz quadrada de {}? R: {:.0f}.'.format(n, r))
-
-
+# Exercício Python: Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa. Pergunte o valor da casa, o salário do comprador e em quantos
+anos ele vai pagar. A prestação mensal não pode exceder 30% do salário ou então o empréstimo será negado.
 
 nome = str(input('Qual o seu nome completo? '))
 conjuge = str(input('Qual o nome do conjuge? '))
@@ -40,4 +22,5 @@ prestacao = financiamento/meses
 if prestacao >= limite_renda:
     print('Seu empréstimo foi negado, pois o valor pedido de R${} ultrapassa 30% da renda familiar nas prestações.'.format(renda))
 elif prestacao <= limite_renda:
+
     print('Parabéns! O empréstimo foi aceito.')
